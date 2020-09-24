@@ -3,12 +3,7 @@ import RadialInput from './RadialInput';
 
 const Forma = () => {
   return (
-    <form
-      name="Encuesta"
-      action="https://coachingmusical.net/landing-pages-y-success/form-succses-principal/form-succes-principal"
-      method="POST"
-      data-netlify="true"
-    >
+    <form name="encuesta" method="POST" data-netlify="true">
       <p>Califíque su nivel de satisfacción en los siguientes aspectos:</p>
       <RadialInput
         id={'expectativas'}
@@ -72,11 +67,11 @@ const Forma = () => {
         8. ¿Cuales fueron los tres temas que más le aportaron durante el ciclo
         de asesorías? <br />
         <br />
-        - <input type="text" />
+        - <input name="tema1" type="text" />
         <br />
-        - <input type="text" />
+        - <input name="tema2" type="text" />
         <br />
-        - <input type="text" />
+        - <input name="tema3" type="text" />
         <br />
       </label>
       <br /> <br />
@@ -85,14 +80,14 @@ const Forma = () => {
         gustado estudiar en el ciclo de asesorías?
         <br />
         <br />
-        <textarea type="text" />
+        <textarea name="tema4" type="text" />
       </label>
       <br /> <br />
       <label>
         10. ¿Qué aspectos de la asesoría siente que pueden mejorar?
         <br />
         <br />
-        <textarea type="text" />
+        <textarea name="mejora" type="text" />
       </label>
       <br />
       <RadialInput id={'recomienda'} name={'recomienda'} values={['si', 'no']}>
@@ -118,18 +113,20 @@ const Forma = () => {
         13. En caso de que su respuesta sea <span> NO</span>. ¿Cuánto cree usted
         que sería un precio adecuado para este ciclo de asesorías?
         <br /> <br />
-        $ <input type="number" /> pesos Colombianos
-      </label>{' '}
+        $ <input name="money" type="number" /> pesos Colombianos
+      </label>
       <br /> <br />
       <label>
         14. Por favor describa en un párrafo corto su experiencia con Coaching
         Musical:
         <br />
         <br />
-        <textarea type="text" />
+        <textarea name="tuExperiencia" type="text" />
       </label>
       <br /> <br />
-      <button type="submit">enviar</button>
+      <button name="submit" type="submit">
+        enviar
+      </button>
     </form>
   );
 };
