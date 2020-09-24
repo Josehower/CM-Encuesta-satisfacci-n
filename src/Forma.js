@@ -4,13 +4,8 @@ import RadialInput from './RadialInput';
 const Forma = () => {
   return (
     <>
-      <form
-        name="encuesta"
-        method="POST"
-        enctype="application/x-www-form-urlencoded"
-        action="https://cm-encuesta-de-satisfaccion.netlify.app/"
-        netlify
-      >
+      <form name="encuesta" method="POST">
+        <input type="hidden" name="form-name" value="encuesta" />.
         <p>Califíque su nivel de satisfacción en los siguientes aspectos:</p>
         <RadialInput
           id={'expectativas'}
