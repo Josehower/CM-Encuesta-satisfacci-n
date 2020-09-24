@@ -7,13 +7,13 @@ const RadialInput = (props) => {
       {props.values.map((value) => {
         return (
           <>
+            <label for={props.name + value}>{value}</label>
             <input
               type="radio"
               id={props.id}
               name={props.name + value}
               value={value}
             />
-            <label for={value}>{value}</label>
           </>
         );
       })}
