@@ -3,7 +3,12 @@ import RadialInput from './RadialInput';
 
 const Forma = () => {
   return (
-    <form name="Encuesta" method="POST" netlify>
+    <form
+      name="Encuesta"
+      action="https://coachingmusical.net/landing-pages-y-success/form-succses-principal/form-succes-principal"
+      method="POST"
+      data-netlify="true"
+    >
       <p>Califíque su nivel de satisfacción en los siguientes aspectos:</p>
       <RadialInput
         id={'expectativas'}
