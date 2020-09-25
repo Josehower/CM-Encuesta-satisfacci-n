@@ -104,9 +104,9 @@ const Forma = () => {
           id={'valor correcto'}
           name={'valor correcto'}
           values={[
-            'si, el valor es correcto.',
-            'no, la asesoría es muy económica respecto a su utilidad',
-            'no, la asesoría es muy costosa respecto a su utilidad',
+            '   si, el valor es correcto. -->',
+            '   no, la asesoría es muy económica respecto a su utilidad. -->',
+            '   no, la asesoría es muy costosa respecto a su utilidad. -->',
           ]}
         >
           <p>
