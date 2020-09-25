@@ -23,7 +23,8 @@ h1{
 #valor{
   div{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 10px;
   }
 p {
   grid-column: span 2;
