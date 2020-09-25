@@ -5,7 +5,7 @@ const Forma = () => {
   return (
     <>
       <form name="encuesta" method="POST">
-        <input type="hidden" name="form-name" value="encuesta" />.
+        <input type="hidden" name="form-name" value="encuesta" />
         <p>Califíque su nivel de satisfacción en los siguientes aspectos:</p>
         <RadialInput
           id={'expectativas'}
@@ -100,20 +100,22 @@ const Forma = () => {
           <p>11. ¿Recomendaría el ciclo de asesorías a otros artistas?</p>
         </RadialInput>
         <br />
-        <RadialInput
-          id={'valor correcto'}
-          name={'valor correcto'}
-          values={[
-            '   si, el valor es correcto. -->',
-            '   no, la asesoría es muy económica respecto a su utilidad. -->',
-            '   no, la asesoría es muy costosa respecto a su utilidad. -->',
-          ]}
-        >
-          <p>
-            12. ¿Opina que el costo de la asesoría esta de acuerdo con la
-            calidad de la misma?
-          </p>
-        </RadialInput>
+        <div id="valor">
+          <RadialInput
+            id={'valor correcto'}
+            name={'valor correcto'}
+            values={[
+              'si, el valor es correcto.',
+              'no, la asesoría es muy económica respecto a su utilidad.',
+              'no, la asesoría es muy costosa respecto a su utilidad.',
+            ]}
+          >
+            <p>
+              12. ¿Opina que el costo de la asesoría esta de acuerdo con la
+              calidad de la misma?
+            </p>
+          </RadialInput>
+        </div>
         <br /> <br />
         <label>
           13. En caso de que su respuesta sea <span> NO</span>. ¿Cuánto cree

@@ -4,7 +4,7 @@ import Forma from './Forma';
 function App() {
   return (
     <>
-      <h1>Encuesta de satisfaccion Coaching Musical</h1>
+      <h1>Encuesta de satisfacción Coaching Musical</h1>
       <Forma />
     </>
   );
