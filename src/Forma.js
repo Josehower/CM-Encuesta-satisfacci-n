@@ -6,7 +6,11 @@ const Forma = () => {
     <>
       <form name="encuesta" method="POST">
         <input type="hidden" name="form-name" value="encuesta" />
-        <p>Califíque su nivel de satisfacción en los siguientes aspectos:</p>
+        <p>
+          En una escala de 1 a 10 siendo 1 <span> muy Insatisfecho</span> y 10{' '}
+          <span> muy Satisfecho</span>. <br />
+          Califíque su nivel de satisfacción en los siguientes aspectos:
+        </p>
         <RadialInput
           id={'expectativas'}
           name={'expectativas'}
@@ -66,7 +70,7 @@ const Forma = () => {
         <hr />
         <br />
         <label>
-          8. ¿Cuales fueron los tres temas que más le aportaron durante el ciclo
+          8. ¿Cuáles fueron los tres temas que más le aportaron durante el ciclo
           de asesorías? <br />
           <br />
           - <input name="tema1" type="text" />
@@ -78,7 +82,7 @@ const Forma = () => {
         </label>
         <br /> <br />
         <label>
-          9. ¿Cuales temas no estan incluidos en la asesorías, pero le hubiera
+          9. ¿Cuáles temas no estan incluidos en la asesorías, pero le hubiera
           gustado estudiar en el ciclo de asesorías?
           <br />
           <br />
